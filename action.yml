@@ -1,0 +1,13 @@
+name: 'Identity-Aware Proxy Header Check'
+description: 'Check for the presence of an IAP HTTP response header'
+
+inputs:
+  url:
+    description: 'Endpoint to check'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.url }}
