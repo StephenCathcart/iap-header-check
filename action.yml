@@ -1,6 +1,10 @@
 name: 'Identity-Aware Proxy Header Check'
 description: 'Check for the presence of an IAP HTTP response header'
 
+branding:
+  icon: 'lock'
+  color: 'blue'
+
 inputs:
   url:
     description: 'Endpoint to check'
